@@ -1,0 +1,40 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+}
+
+.main {
+  flex: 1 1 auto;
+}
+
+
+.container {
+  max-width: 1520px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.title {
+  font-family: var(--ActayB);
+  font-size: 28px;
+  line-height: 120%;
+  font-weight: 700
+}
+
+.text {
+  font-family: var(--ActayR);
+  font-size: 18px;
+  line-height: 140%;
+}
+
+@media (min-width:1200px) {
+  .container {
+    padding: 0 0;
+  }
+
+  .title {
+    font-size: 35px;
+  }
+}

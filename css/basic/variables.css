@@ -1,0 +1,12 @@
+:root {
+  /* color */
+  --color-main-bg: #FFFFFF;
+  --color-btn: #3FA9F5;
+  --color-btn-accent: #222222;
+  --color-btn-hover: #39B54A;
+  --color-card-accent-bg: #F2F8FD;
+  --color-card-bg: #D2E4FF;
+  /* fonts */
+  --ActayR: Actay-Regular;
+  --ActayB: Actay-Bold;
+}

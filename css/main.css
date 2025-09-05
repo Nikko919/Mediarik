@@ -1,0 +1,20 @@
+@import url(../css/basic/reset.css);
+@import url(./basic/variables.css);
+@import url(../css/common/common.css);
+
+
+
+
+
+/* fonts */
+@font-face {
+  font-family: 'Actay-Regular';
+  src: url(../fonts/Actay-Regular.woff2), ;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Actay-Bold';
+  src: url(../fonts/ActayWide-Bold.woff2), ;
+  font-weight: 700;
+}
