@@ -390,6 +390,15 @@
   right: 20px;
 }
 
+.reviews__btn .button-svg {
+  transition: transform .3s ease;
+}
+
+.reviews__btn.is-open .button-svg {
+  transform: rotate(180deg);
+}
+
+
 @media (min-width:380px) {}
 
 @media (min-width:750px) {
