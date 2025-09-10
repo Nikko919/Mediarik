@@ -1,0 +1,102 @@
+.btn {
+  display: inline-flex;
+  padding: 15px 20px;
+  background-color: var(--color-accent);
+  border-radius: 30px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+  font-family: var(--Bold);
+  font-size: 15px;
+  line-height: 100%;
+  color: var(--color-main-bg);
+  transition: background-color .3s ease;
+  -webkit-transition: background-color .3s ease;
+  -moz-transition: background-color .3s ease;
+  -ms-transition: background-color .3s ease;
+  -o-transition: background-color .3s ease;
+}
+
+.btn-blue {
+  background-color: var(--color-btn);
+  transition: background-color .3s ease;
+}
+
+/* кнопка для отзывов и услуг  */
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  -o-border-radius: 25px;
+  background-color: var(--color-main-bg);
+
+  transition: background-color 0.3s ease;
+  -webkit-transition: background-color 0.3s ease;
+  -moz-transition: background-color 0.3s ease;
+  -ms-transition: background-color 0.3s ease;
+  -o-transition: background-color 0.3s ease;
+  border: 1px solid transparent;
+}
+
+.button:active {
+  border: 1px solid var(--color-btn-hover);
+}
+
+.button-svg {
+  transition: 0.3s ease;
+  -webkit-transition: 0.3s ease;
+  -moz-transition: 0.3s ease;
+  -ms-transition: 0.3s ease;
+  -o-transition: 0.3s ease;
+}
+
+.button-svg>path {
+  fill: var(--color-btn);
+}
+
+@media (hover:hover) {
+  .btn-accent-hover:hover {
+    background-color: var(--color-btn);
+  }
+
+  .btn-blue:hover {
+    background-color: var(--color-btn-hover);
+  }
+
+  /* кнопки для услуг и отзывов  */
+  .button:hover {
+    background-color: var(--color-card-bg);
+  }
+
+  .services__btn:hover>.button-svg {
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+  }
+}
+
+@media (min-width:380px) {
+  .btn {
+    font-size: 18px;
+  }
+}
+
+@media (min-width:1024px) {
+  .btn {
+    padding: 20px 35px;
+    font-size: 20px;
+    /* max-width: 50%; */
+  }
+}

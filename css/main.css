@@ -1,8 +1,15 @@
 @import url(../css/basic/reset.css);
 @import url(./basic/variables.css);
 @import url(../css/common/common.css);
+@import url(../css/components/button.css);
+@import url(../css/components/card.css);
+@import url(../css/components/swiper-bundle.css);
 
-
+/* section */
+@import url(../css/block/direction.css);
+@import url(../css/block/advantages.css);
+@import url(../css/block/cases.css);
+@import url(../css/block/reviews.css);
 
 
 

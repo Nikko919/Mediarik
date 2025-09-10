@@ -1,0 +1,23 @@
+.reviews {
+  margin-bottom: 120px;
+}
+
+.reviews__inner {
+  min-height: 685px;
+  background-image: url(/images/reviewsBG.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+
+@media (min-width:1200px) {
+  .reviews {
+    margin-bottom: 200px;
+  }
+
+  .reviews__inner {
+    background-image: url(/images/reviewsBG2.png);
+  }
+
+}
