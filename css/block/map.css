@@ -1,0 +1,103 @@
+.offices__map-box>* {
+  width: 100%;
+  /* max-height: 435px; */
+}
+
+.offices__map-box>.rf-map>svg {
+  width: 100%;
+  max-height: 700px;
+  /* max-height: fit-content; */
+}
+
+
+.rf-map,
+.rf-map * {
+  box-sizing: border-box;
+}
+
+/* .rf-map {
+  position: relative;
+  max-width: 1120px;
+  max-height: 400px;
+  margin: auto;
+  padding: 20px;
+} */
+
+.district {
+  position: absolute;
+  right: 0;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.rf-map .district b {
+  display: inline-block;
+  /* position: absolute; */
+  z-index: 5;
+  width: 10px;
+  height: 10px;
+  background: rgba(51, 122, 183, 0.9);
+  border-radius: 50%;
+  /* left: 6px; */
+  /* top: 18px; */
+  transition: all 0.3s;
+}
+
+/* .rf-map svg {
+  width: 100%;
+  height: 100%;
+  max-width: 1120px; 
+  max-height: 434px; 
+} */
+
+.rf-map path {
+  stroke: #FFFFFF;
+  stroke-width: 1;
+  stroke-linejoin: round;
+}
+
+
+.rf-map [data-code] {
+  fill: rgba(210, 228, 255, 1);
+  transition: fill 0.2s;
+}
+
+.rf-map.open .close-district {
+  opacity: 1;
+  pointer-events: initial;
+}
+
+.rf-map .district-links {
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+.rf-map .district-links div:after {
+  content: " | ";
+  color: #337AB7;
+}
+
+.rf-map .district-links div:last-child:after {
+  content: "";
+}
+
+.rf-map [data-code="RU-MOS"] {
+  fill: rgba(63, 169, 245, 1);
+}
+
+.rf-map [data-code="RU-MOW"] {
+  fill: rgba(63, 169, 245, 1);
+}
+
+
+
+
+@media (min-width:768px) {
+
+  .rf-map .district-links {
+    display: none;
+  }
+}

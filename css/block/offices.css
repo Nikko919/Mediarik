@@ -1,0 +1,134 @@
+.offices__map-box {
+  margin-bottom: 50px;
+}
+
+.offices__info-card {
+  display: flex;
+  flex-direction: column;
+  max-width: 695px;
+  padding: 20px;
+  background-color: var(--color-card-bg);
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+
+.offices__info-box {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+}
+
+.offices__info-card-top {
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.offices__info-title {
+  font-family: var(--Bold);
+  font-size: 20px;
+  line-height: 120%;
+  margin-right: 50px;
+}
+
+.offices__info-card-top>.text {
+  margin-left: auto;
+}
+
+.offices__info-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-bottom: 50px;
+  flex: 1 1 auto;
+}
+
+.offices__info-address {
+  display: inline-flex;
+  font-family: var(--Bold);
+  font-size: 16px;
+  line-height: 100%;
+  transition: color .3s ease;
+  -webkit-transition: color .3s ease;
+  -moz-transition: color .3s ease;
+  -ms-transition: color .3s ease;
+  -o-transition: color .3s ease;
+}
+
+.text-hover {
+  transition: color .3s ease;
+  -webkit-transition: color .3s ease;
+  -moz-transition: color .3s ease;
+  -ms-transition: color .3s ease;
+  -o-transition: color .3s ease;
+}
+
+.offices__info-address-img {
+  width: 25px;
+  height: 25px;
+}
+
+.offices__info-address-social {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+
+
+
+
+
+@media (min-width:370px) {
+  .offices__info-address {
+    font-family: var(--Bold);
+    font-size: 18px;
+    line-height: 100%;
+  }
+
+
+}
+
+
+@media (min-width:760px) {
+  .offices__info-box {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+}
+
+@media (min-width:1024px) {
+  .offices__map-box {
+    margin-bottom: 20px;
+  }
+
+  .offices__info-box {
+    gap: 20px;
+  }
+
+  .offices__info-card {
+    padding: 30px;
+  }
+
+  .offices__info-card-top {
+    display: flex;
+    margin-bottom: 50px;
+  }
+
+  .offices__info-address {
+    font-size: 20px;
+  }
+
+}
+
+
+@media (hover:hover) {
+
+  .offices__info-list>li:hover>a,
+  .text-hover:hover {
+    color: var(--color-btn);
+  }
+}

@@ -132,7 +132,6 @@
   stroke: var(--color-btn);
 }
 
-
 .accordion__content {
   max-height: 0;
   overflow: hidden;
@@ -160,8 +159,6 @@
   -ms-border-radius: 20px;
   -o-border-radius: 20px;
 }
-
-
 
 @media (min-width:376px) {
   .accordion__top>.accordion__title {
