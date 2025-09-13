@@ -1,0 +1,129 @@
+.species {
+  margin-bottom: 120px;
+}
+
+.species__info-box {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+.species__column {
+  padding: 20px;
+  background-color: var(--color-card-bg);
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+
+.species__column-title {
+  font-family: var(--Bold);
+  font-size: 20px;
+  line-height: 120%;
+  margin-bottom: 30px;
+  text-wrap: balance;
+}
+
+.species__column-description {
+  margin-bottom: 15px;
+}
+
+.species__column-description>.text:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.example-card:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+.example-card__title {
+  font-family: var(--Bold);
+  font-size: 20px;
+  line-height: 120%;
+  margin-bottom: 15px;
+  text-wrap: balance;
+}
+
+.example-card__list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.example-card__item {
+  position: relative;
+  padding-left: 20px;
+}
+
+.example-card__item::after {
+  content: '';
+  position: absolute;
+  top: 5px;
+  left: 0;
+  width: 10px;
+  height: 10px;
+  background-color: var(--color-accent);
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+}
+
+@media (min-width:1024px) {
+  .species__info-box {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+}
+
+@media (min-width:1200px) {
+  .species {
+    margin-bottom: 200px;
+  }
+
+  .species__column {
+    max-width: 695px;
+    padding: 30px;
+  }
+
+  .species__column-title {
+    max-width: 80%;
+    font-size: 25px;
+    margin-bottom: 50px;
+  }
+
+  .species__column-description {
+    margin-bottom: 30px;
+  }
+
+  .example-card:not(:last-child) {
+    margin-bottom: 30px;
+  }
+
+  .example-card__title {
+    max-width: 80%;
+    margin-bottom: 30px;
+  }
+
+  .example-card__item {
+    padding-left: 30px;
+  }
+
+  .why-info-reverce>.why-info__column-left {
+    padding: 30px 0 0 0;
+    order: 2;
+  }
+
+  .why-info-reverce>.why-info__column-left>.why-info__description {
+    margin-bottom: 50px;
+  }
+
+  .why-info-reverce>.why-info__column-right {
+    order: 1;
+  }
+}

@@ -10,8 +10,14 @@
 @import url(../css/block/advantages.css);
 @import url(../css/block/cases.css);
 @import url(../css/block/reviews.css);
+@import url(../css/block/form.css);
+@import url(../css/block/faq.css);
 
+@import url(../css/block/page-services.css);
+@import url(../css/block/why.css);
+@import url(../css/block/species.css);
 
+@import url(../css/footer/footer.css);
 
 /* fonts */
 @font-face {

@@ -317,17 +317,18 @@
   -moz-border-radius: 20px;
   -ms-border-radius: 20px;
   -o-border-radius: 20px;
-  /*overflow: hidden;
-  */
+
   transition: height .4s ease;
-  /*max-height: 353px;
-  */
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 
 .reviews__card-top {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  /* flex: 1 1 auto; */
   margin-bottom: 30px;
 }
 

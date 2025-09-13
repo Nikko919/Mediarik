@@ -67,7 +67,8 @@
 }
 
 .top-title {
-  max-width: 790px;
+  max-width: 805px;
+  /* max-width: 790px; */
   font-family: var(--Bold);
   font-size: 23px;
   line-height: 100%;
@@ -126,5 +127,6 @@
 
   .top-title {
     font-size: 35px;
+    line-height: 120%;
   }
 }
