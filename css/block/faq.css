@@ -174,7 +174,18 @@
   .accordion__top>.accordion__title {
     max-width: 650px;
   }
+}
 
+@media (min-width:1024px) {
+  .faq__tabs-inner {
+    display: inline-grid;
+    grid-template-columns: 326px 1fr;
+    gap: 30px;
+  }
+
+  .faq__tabs {
+    height: fit-content;
+  }
 }
 
 @media (min-width:1200px) {
