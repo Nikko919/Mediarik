@@ -1,0 +1,116 @@
+.tariffs {
+  margin-bottom: 120px;
+}
+
+.tariffs__card {
+  background-color: var(--color-card-accent-bg);
+}
+
+.tariffs__card:last-child {
+  background-color: var(--color-card-bg);
+}
+
+.tariffs__card-box {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+}
+
+.tariffs__card>.advantages-btn {
+  align-self: flex-end;
+}
+
+.tariffs__card>.advantages-card__img-box>.advantages-card-img {
+  display: block;
+  height: 140px;
+  transition: transform .3s ease;
+  -webkit-transition: transform .3s ease;
+  -moz-transition: transform .3s ease;
+  -ms-transition: transform .3s ease;
+  -o-transition: transform .3s ease;
+}
+
+.tariffs__card>.advantages-card__img-box>.advantages-card-img-one {
+  bottom: -25px;
+  left: -30px;
+  transform: rotate(-20deg);
+  -webkit-transform: rotate(-20deg);
+  -moz-transform: rotate(-20deg);
+  -ms-transform: rotate(-20deg);
+  -o-transform: rotate(-20deg);
+}
+
+.tariffs__card>.advantages-card__img-box>.advantages-card-img-two {
+  bottom: -20px;
+  left: -10px;
+}
+
+.tariffs__card>.advantages-card__img-box>.advantages-card-img-three {
+  bottom: -30px;
+  left: -30px;
+  transform: rotate(10deg);
+}
+
+@media (min-width:1200px) {
+  .tariffs {
+    margin-bottom: 200px;
+  }
+
+  .tariffs__card-box {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+
+  .tariffs__card>.advantages-card__img-box>.advantages-card-img {
+    height: 200px;
+  }
+
+  .tariffs__card>.advantages-card__img-box>.advantages-card-img-one {
+    bottom: -35px;
+    left: -40px;
+    transform: rotate(-20deg);
+    -webkit-transform: rotate(-20deg);
+    -moz-transform: rotate(-20deg);
+    -ms-transform: rotate(-20deg);
+    -o-transform: rotate(-20deg);
+  }
+
+  .tariffs__card>.advantages-card__img-box>.advantages-card-img-two {
+    bottom: -20px;
+    left: -10px;
+    transform: rotate(10deg);
+  }
+
+  .tariffs__card>.advantages-card__img-box>.advantages-card-img-three {
+    bottom: -30px;
+    left: -20px;
+    transform: rotate(-10deg);
+  }
+}
+
+@media (hover:hover) {
+  .tariffs__card:hover>.advantages-card__img-box>.advantages-card-img-one {
+    transform: scale(1.1) rotate(-20deg);
+    -webkit-transform: scale(1.1) rotate(-20deg);
+    -moz-transform: scale(1.1) rotate(-20deg);
+    -ms-transform: scale(1.1) rotate(-20deg);
+    -o-transform: scale(1.1) rotate(-20deg);
+  }
+
+  .tariffs__card:hover>.advantages-card__img-box>.advantages-card-img-two {
+    transform: scale(1.1) rotate(10deg);
+    -webkit-transform: scale(1.1) rotate(10deg);
+    -moz-transform: scale(1.1) rotate(10deg);
+    -ms-transform: scale(1.1) rotate(10deg);
+    -o-transform: scale(1.1) rotate(10deg);
+  }
+
+  .tariffs__card:hover>.advantages-card__img-box>.advantages-card-img-three {
+    transform: scale(1.1) rotate(-10deg);
+    -webkit-transform: scale(1.1) rotate(-10deg);
+    -moz-transform: scale(1.1) rotate(-10deg);
+    -ms-transform: scale(1.1) rotate(-10deg);
+    -o-transform: scale(1.1) rotate(-10deg);
+  }
+}

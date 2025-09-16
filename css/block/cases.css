@@ -73,6 +73,12 @@
   -o-transition: fill 0.3s ease;
 }
 
+.page-cases__card-box {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+}
+
 @media (min-width:760px) {
   .casesSwiper-pagination {
     position: absolute;
@@ -97,6 +103,12 @@
 
   .casesSwiper-pagination {
     display: none;
+  }
+
+  .page-cases__card-box {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 50px;
   }
 
 }

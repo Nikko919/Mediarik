@@ -19,9 +19,17 @@
 @import url(../css/block/page-whatsapp.css);
 @import url(../css/block/map.css);
 @import url(../css/block/offices.css);
+@import url(../css/block/tariffs.css);
+@import url(../css/block/404.css);
+@import url(../css/block/intro.css);
+@import url(../css/block/examples.css);
+@import url(../css/components/burger.css);
+@import url(../css/components/popup.css);
+@import url(../css/components/cookie.css);
+@import url(../css/block/hero.css);
 
 
-
+@import url(../css/header/header.css);
 @import url(../css/footer/footer.css);
 
 /* fonts */

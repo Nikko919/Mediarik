@@ -96,6 +96,7 @@
 @media (min-width:1024px) {
   .btn {
     padding: 20px 35px;
+    /* padding: 20px 35px; */
     font-size: 20px;
     /* max-width: 50%; */
   }

@@ -159,6 +159,17 @@
   /* max-width: 860px; */
 }
 
+.page-cases__card {
+  max-width: 100%;
+  background-color: var(--color-card-accent-bg);
+  padding: 30px;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+
 .case-card__top {
   display: flex;
   flex-direction: column;
@@ -180,6 +191,11 @@
   -ms-border-radius: 10px;
   -o-border-radius: 10px;
   margin-bottom: 10px;
+}
+
+.page-cases__logo-box {
+  background-color: var(--color-main-bg);
+
 }
 
 .case-card__logo {
@@ -555,6 +571,34 @@
 
   .case-card {
     max-width: 860px;
+
+  }
+
+  .case-card__bottom-img {
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+  }
+
+  .page-cases__card {
+    max-width: 100%;
+    padding: 30px;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+  }
+
+  .page-cases__bottom>.case-card__bottom-img,
+  .page-cases__bottom {
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
   }
 }
 

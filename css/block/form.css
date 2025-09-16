@@ -143,9 +143,18 @@
 
 }
 
+.popup-checkbox-custom {
+  border: 1px solid var(--color-main-bg);
+
+}
+
 /* Стиль при наведении */
 .policy-checkbox-label:hover .custom-checkbox {
   border-color: #888;
+}
+
+.policy-checkbox-label:hover .popup-checkbox-custom {
+  border-color: var(--color-main-bg);
 }
 
 /* Стиль при активации (checked) */
@@ -160,6 +169,22 @@
   width: 8px;
   height: 15px;
   border: solid var(--color-btn);
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+  margin-left: 5px;
+  margin-top: 0px;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+}
+
+.policy-checkbox:checked+.popup-checkbox-custom::after {
+  content: "";
+  display: block;
+  width: 8px;
+  height: 15px;
+  border: solid var(--color-main-bg);
   border-width: 0 2px 2px 0;
   transform: rotate(45deg);
   margin-left: 5px;
