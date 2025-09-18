@@ -28,14 +28,6 @@
 .examples__column-right {}
 
 
-
-
-
-
-
-
-
-
 @media (min-width:760px) {
 
 
@@ -50,7 +42,6 @@
     color: var(--color-main-bg);
     order: 0;
   }
-
 
 }
 

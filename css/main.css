@@ -24,13 +24,13 @@
 @import url(../css/block/intro.css);
 @import url(../css/block/examples.css);
 @import url(../css/components/burger.css);
-@import url(../css/components/popup.css);
 @import url(../css/components/cookie.css);
 @import url(../css/block/hero.css);
-
+@import url(../css/components/calculator.css);
 
 @import url(../css/header/header.css);
 @import url(../css/footer/footer.css);
+@import url(../css/components/popup.css);
 
 /* fonts */
 @font-face {

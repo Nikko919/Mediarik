@@ -1,4 +1,5 @@
-.tariffs {
+.tariffs,
+.calculate-cost {
   margin-bottom: 120px;
 }
 
@@ -51,8 +52,81 @@
   transform: rotate(10deg);
 }
 
+/* блок  с калькулятором  */
+
+.calculate-cost__inner {
+  display: flex;
+  flex-direction: column;
+}
+
+.calculate-cost__colunm-left {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 70px;
+}
+
+.calculate-cost__title {
+  font-family: var(--Bold);
+  font-size: 20px;
+  line-height: 120%;
+  margin-bottom: 50px;
+}
+
+.calculate-cost__description {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 50px;
+}
+
+.calculate-cost__text:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+.calculate-cost__text {
+  font-family: var(--Bold);
+  font-size: 18px;
+  line-height: 100%;
+}
+
+.calculate-cost-btn {
+  align-self: flex-start;
+}
+
+@media (min-width:370px) {
+  .calculate-cost__title {
+    font-size: 28px;
+  }
+
+
+}
+
+@media (min-width:750px) {
+  .tariffs__card-box {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+
+
+
+}
+
+@media (min-width:1024px) {
+  .calculate-cost__inner {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .calculate-cost__colunm-left {
+    max-width: 540px;
+    align-self: center;
+  }
+}
+
 @media (min-width:1200px) {
-  .tariffs {
+
+  .tariffs,
+  .calculate-cost {
     margin-bottom: 200px;
   }
 
@@ -86,6 +160,25 @@
     bottom: -30px;
     left: -20px;
     transform: rotate(-10deg);
+  }
+
+  /* блок калькулятора */
+
+  .calculate-cost__inner {
+    justify-content: center;
+    gap: 70px;
+  }
+
+  .calculate-cost__colunm-left {
+    margin-bottom: 0;
+  }
+
+  .calculate-cost__title {
+    font-size: 35px;
+  }
+
+  .calculate-cost__text {
+    font-size: 20px;
   }
 }
 
