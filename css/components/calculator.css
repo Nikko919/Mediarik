@@ -27,6 +27,10 @@
   margin-bottom: 30px;
 }
 
+.calculator-form__type-title-popup {
+  color: var(--color-main-bg);
+}
+
 .calculator-form {
   display: flex;
   flex-direction: column;
@@ -346,9 +350,23 @@
     padding: 30px;
   }
 
+  /* стили для калькулятора который в попап */
+  .calculator-form-popup>.form-output,
+  .calculator-form__approximate,
+  .calculator-form__quantity {
+    margin-bottom: 25px;
+  }
 
+  .calculator__title-popup {
+    margin-bottom: 25px;
+  }
 }
 
+@media (min-width:1440px) {
+  .calculator__title {
+    max-width: 100%;
+  }
+}
 
 @media (hover:hover) {
   .form-output__item:hover {

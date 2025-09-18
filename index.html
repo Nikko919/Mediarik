@@ -1140,14 +1140,13 @@
         <div id="popup5" class="popup">
           <div id="closePopupBtn5" class="close-popup">&#215</div>
           <div class="calculator__inner calculator__inner-popup ">
-            <h3 class="calculator__title">Рассчитай стоимость прямо здесь! стоимость прямо здесь!</h3>
+            <h3 class="calculator__title calculator__title-popup  calculator-form__type-title-popup">Рассчитай стоимость прямо здесь!</h3>
             <!-- <form action="send-calculator.php" method="POST" class="calculator__form calculator-form "> -->
-            <form class="calculator__form calculator-form ">
-              <!-- <div class="calculator-form__type"> -->
+            <form class="calculator__form calculator-form   calculator-form-popup">
               <div class="calculator-form__output form-output">
-                <h4 class="calculator-form__type-title">Тип рассылки:</h4>
+                <h4 class="calculator-form__type-title calculator-form__type-title-popup ">Тип рассылки:</h4>
                 <div class="form-output__btn">
-                  <div class="form-output-title"> Выберите тип:</div>
+                  <div class="form-output-title "> Выберите тип:</div>
                   <input type="hidden" name="delivery_type" id="deliveryType" value="">
                   <div class="services__menu-icon">
                     <svg width="22" height="12" viewBox="0 0 22 12" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -1163,7 +1162,7 @@
                 </ul>
               </div>
               <div class="calculator-form__quantity">
-                <h4 class="calculator-form__type-title">Количество абонентов:</h4>
+                <h4 class="calculator-form__type-title  calculator-form__type-title-popup">Количество абонентов:</h4>
                 <div class="quantity-box">
                   <div class="quantity-btn quantity-minus"><svg width="50" height="51" viewBox="0 0 50 51" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <rect y="0.529297" width="50" height="50" rx="25" />
@@ -1180,7 +1179,7 @@
                 </div>
               </div>
               <div class="calculator-form__approximate">
-                <h4 class="calculator-form__type-title">Ориентировочная стоимость:</h4>
+                <h4 class="calculator-form__type-title  calculator-form__type-title-popup">Ориентировочная стоимость:</h4>
                 <div class="approximate__box">
                   <input id="approximateInput" type="hidden" name="approximate_price" readonly value="">
                   <span class="approximate__box-price">1 005 000</span>
@@ -1188,7 +1187,6 @@
                 </div>
               </div>
               <button class="btn btn-accent-hover calculator-btn">Отправить заявку</button>
-              <!-- </div> -->
             </form>
           </div>
         </div>
