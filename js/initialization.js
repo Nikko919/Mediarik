@@ -40,3 +40,15 @@ var swiper = new Swiper(".reviewsSwiper", {
     // },
   },
 });
+
+
+
+
+var swiper = new Swiper(".examplesSwiper", {
+  grabCursor: true,
+  slidesPerView: 1,
+  navigation: {
+    nextEl: ".examplesSwiper-button-next",
+    prevEl: ".examplesSwiper-button-prev",
+  },
+});

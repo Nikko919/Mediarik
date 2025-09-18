@@ -2,6 +2,17 @@
   margin-bottom: 120px;
 }
 
+.examples__inner {
+  display: flex;
+  flex-direction: column;
+
+}
+
+.examples__column-left {
+  align-self: center;
+  margin-bottom: 50px;
+}
+
 .examples__title {
   display: flex;
   align-items: center;
@@ -25,38 +36,194 @@
   order: 99;
 }
 
-.examples__column-right {}
+.examples-column-right {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
 
+.examples-column-right__box-img>img {
+  width: 302px;
+  height: 550px;
+}
+
+.examples-column-right__box-img {
+  position: relative;
+}
+
+/* слайдер */
+
+.examplesSwiper {
+  position: absolute;
+  top: 12.3%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: var(--color-main-bg);
+  width: 220px;
+  height: 415px;
+  /* height: 400px; */
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+}
+
+.examplesSwiper-pagination {
+  position: relative;
+  display: flex;
+  align-items: center;
+  align-self: flex-end;
+  margin-right: 30px;
+  gap: 20px;
+}
+
+.examplesSwiper-button-next,
+.examplesSwiper-button-prev {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  background-color: var(--color-btn);
+  cursor: pointer;
+  border-radius: 25px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  -o-border-radius: 25px;
+  transition: background-color 0.3s ease;
+}
+
+.examplesSwiper-button-next>svg,
+.examplesSwiper-button-prev>svg {
+  width: 25px;
+  height: 25px;
+  fill: #FFFFFF;
+  transition: fill 0.3s ease;
+}
+
+.examplesSwiper-button-prev.swiper-button-disabled,
+.examplesSwiper-button-next.swiper-button-disabled {
+  background-color: var(--color-card-accent-bg);
+  cursor: auto;
+  pointer-events: none;
+  transition: background-color 0.3s ease;
+  -webkit-transition: background-color 0.3s ease;
+  -moz-transition: background-color 0.3s ease;
+  -ms-transition: background-color 0.3s ease;
+  -o-transition: background-color 0.3s ease;
+}
+
+.examplesSwiper-button-prev.swiper-button-disabled>svg,
+.examplesSwiper-button-next.swiper-button-disabled>svg {
+  fill: #3FA9F5;
+  cursor: auto;
+  pointer-events: none;
+  transition: fill 0.3s ease;
+  -webkit-transition: fill 0.3s ease;
+  -moz-transition: fill 0.3s ease;
+  -ms-transition: fill 0.3s ease;
+  -o-transition: fill 0.3s ease;
+}
+
+.examples-slide__img-box {
+  position: relative;
+  width: 100%;
+  height: 100%;
+
+}
+
+.examples-slide__img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  object-fit: cover;
+}
 
 @media (min-width:760px) {
+  .examples__inner {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
 
+  }
+
+  .examples__column-left {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    margin-bottom: 0;
+  }
+
+  .examples__title {
+    font-size: 20px;
+  }
 
   .examples__title-color {
-    padding: 15px 30px;
-    background-color: #4CDC5A;
-    border-radius: 30px;
-    -webkit-border-radius: 30px;
-    -moz-border-radius: 30px;
-    -ms-border-radius: 30px;
-    -o-border-radius: 30px;
+    font-size: 20px;
+    padding: 15px 25px;
     color: var(--color-main-bg);
     order: 0;
   }
 
+  .examples-btn {
+    align-self: flex-start;
+    display: inline-flex;
+    margin-top: 30px;
+  }
 }
 
+@media (min-width:1024px) {
+  .examples__title {
+    font-size: 30px;
+    margin-bottom: 40px;
+  }
 
+  .examples__title-color {
+    font-size: 30px;
+    padding: 15px 30px;
+  }
+
+}
 
 @media (min-width:1200px) {
   .examples {
     margin-bottom: 200px;
   }
 
+  .examples__inner {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+  }
+
   .examples__title {
+    font-size: 35px;
     margin-bottom: 50px;
   }
 
+  .examples__title-color {
+    font-size: 35px;
+    padding: 15px 30px;
+  }
+
   .examples-btn {
+    align-self: flex-start;
     display: inline-flex;
   }
+
+  .examples-column-right {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+  }
+
 }

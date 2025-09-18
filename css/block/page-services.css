@@ -1,3 +1,7 @@
+.services {
+  margin-bottom: 120px;
+}
+
 .services__menu {
   padding: 20px;
   background-color: var(--color-card-bg);
@@ -115,6 +119,10 @@
 }
 
 @media (min-width:1200px) {
+  .services {
+    margin-bottom: 200px;
+  }
+
   .services__menu {
     max-width: 326px;
     margin-bottom: 0;

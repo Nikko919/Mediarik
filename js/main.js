@@ -165,3 +165,24 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
+// код для подставки  названия пакета тарифов
+
+
+
+document.addEventListener("DOMContentLoaded", function () {
+  // выбираем все кнопки внутри карточек
+  const buttons = document.querySelectorAll(".advantages-btn.open-popup");
+
+  buttons.forEach(button => {
+    button.addEventListener("click", function () {
+      // находим ближайшую карточку
+      const card = button.closest(".card");
+      // берем текст заголовка карточки
+      const title = card.querySelector(".card__title").innerText;
+      // находим поле "Пакет" в форме
+      const packInput = document.querySelector(".popup__inputs input[name='pack']");
+      // подставляем название пакета
+      packInput.value = title;
+    });
+  });
+});
